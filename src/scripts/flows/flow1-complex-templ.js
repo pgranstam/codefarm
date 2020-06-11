@@ -40,7 +40,8 @@ module.exports = async (argv) => {
         script: script,
         tagScript: tagScript,
         parentStepNames: parentStepNames,
-        visible: visible
+        visible: visible,
+        jobSpec: false
     });
 
     const tagBlSpec = (

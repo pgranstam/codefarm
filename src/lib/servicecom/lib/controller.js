@@ -226,6 +226,7 @@ class Controller {
      * @return {Object} options MondoDB options
      */
     _buildFindQuery(ctx) {
+        console.log("Kaka", ctx);
         const decodedQuery = qs.parse(ctx.query);
         const query = {};
         const options = {};

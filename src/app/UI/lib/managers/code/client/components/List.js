@@ -55,6 +55,8 @@ class ListTabs extends LightComponent {
         const controls = this.props.controls.slice(0);
         const menuItems = this.props.menuItems.slice(0);
 
+        console.log("Code List", controls, menuItems);
+        
         menuItems.push(
             <MenuItem
                 key="active"
@@ -104,6 +106,9 @@ class ListTabs extends LightComponent {
             ));
         }
 
+        console.log("MenuItems final", menuItems);
+        console.log("Controls final", controls);
+        
         return (
             <TASection
                 controls={controls}
