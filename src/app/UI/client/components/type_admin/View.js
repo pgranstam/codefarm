@@ -118,6 +118,7 @@ class View extends LightComponent {
                     const hasCreateAccess = isTokenValidForAccess(
                         userPriv, props.item.type, "create", { throwOnError: false }
                     );
+                    console.log(userPriv, "valid for create", hasCreateAccess);
 
                     if (hasCreateAccess) {
                         props.menuItems.push(

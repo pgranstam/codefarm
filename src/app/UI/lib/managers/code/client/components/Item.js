@@ -10,6 +10,8 @@ class Item extends LightComponent {
     render() {
         this.log("render", this.props, this.state);
 
+        console.log("Code Item", this.props.controls, this.props.breadcrumbs, this.props.menuItems);
+        
         return (
             <TASection
                 controls={this.props.controls}
